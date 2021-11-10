@@ -1,0 +1,11 @@
+@import '_reset.css';
+@import '_font.css';
+@import '_html.css';
+@import '_ui.css';
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

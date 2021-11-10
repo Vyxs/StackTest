@@ -1,0 +1,23 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "ESNext",
+        "strict": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "noImplicitAny": true,
+        "allowUnreachableCode": false,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "typeRoots": [
+            "node_modules/@types/", 
+            "src/@types/"
+        ],
+        "baseUrl": "./src"
+    },
+    "include": ["./src"],
+    "exclude": ["./node_modules", "./dist"],
+    "extends": "@tsconfig/svelte/tsconfig.json"
+}

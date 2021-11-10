@@ -1,0 +1,14 @@
+:root {
+    --border-radius: 3px;
+    --border-radius-lg: 5px;
+    --color-main: rgb(30, 30, 30);
+    --color-second: rgb(40, 40, 40);
+    --color-box: rgb(224, 224, 224);
+    --color-text: rgb(15, 15, 15);
+    --color-title: rgb(31, 31, 31);
+    --color-io: rgb(2, 29, 39);
+    --color-io-text: rgb(216, 216, 216);
+    --color-io-hover: rgb(4, 52, 70);
+    --color-io-active: rgb(2, 40, 54);
+    --color-border: transparent;
+}
