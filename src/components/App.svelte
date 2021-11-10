@@ -185,16 +185,29 @@
         document.execCommand("copy");
     }
 
-    function embedGithubProject() {
-        sdk.embedGithubProject('code', 'Vyxs/StackTest', {
-             height: 600,
-             origin: 'https://stackblitz.com/edit/'
-        });
+
+    function embedProject() {
+        let root = document.getElementById('root');
+
+        if (root) {
+            root.style.cssText += "width: 99vw !important; height: 99vh !important;";
+        }
+        sdk.embedProjectId(
+            'code',
+            'github-kpz1ty',
+            {
+                height: 1000,
+                openFile: 'src/components/App.svelte',
+                theme: 'dark',
+                hideDevTools: false,
+                devToolsHeight: 33,
+            }
+        );
     };
 
 </script>
 
-<div>
+<div id="root">
     <!--
         Put a title describing what the program does.
     -->
@@ -222,7 +235,7 @@
         add a button to the page that embeds the github project.
         use Svelte syntax to do this.
     -->
-    <button on:click={embedGithubProject}>Code</button>
+    <button on:click={embedProject}>Code</button>
     <div id="code"></div>
 </div>
 
