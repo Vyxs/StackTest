@@ -194,7 +194,7 @@
         }
         sdk.embedProjectId(
             'code',
-            'github-kpz1ty',
+            'github-encnlq',
             {
                 height: 1000,
                 openFile: 'src/components/App.svelte',
